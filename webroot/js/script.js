@@ -7,7 +7,7 @@ $(function(){
     var errorMessageDiv = getErrorMessageDiv(parentDiv);
     //console.log("this val is " + $(this).val());
     $.post(
-      '../ajax_validation/ajax_validation/action',{
+      'ajax_validation/ajax_validation/action',{
           'model': model,
           'field': field,
           'val': $(this).val()
