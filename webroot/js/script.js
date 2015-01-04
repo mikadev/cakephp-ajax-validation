@@ -22,7 +22,7 @@ $(function(){
         if( data && errorMessageDiv[0] === undefined ){
           parentDiv.append("<div class='error-message'>" + data + "</div>");
         }else if( data ){
-          errorMessageDiv.text(data);
+          errorMessageDiv.html(data);
         }else if( data === "" && errorMessageDiv[0] !== undefined ){
           errorMessageDiv.remove();
         }
